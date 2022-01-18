@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Advanture The World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <h1 class="logo">Advanture</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <a class="explore" href="#">Contact us</a>
+        </ul>
+        <i class="fas fa-align-justify fa-2x menu-btn"></i>
+    </nav>
+    <header>
+        <div class="banner-content">
+            <p>Explore The Colourful World</p>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a class="explore" href="#">Explore</a>
+            <!-- <div class="explore"></div> -->
+        </div>
+    </header>
+    <script>
+        const nav = document.querySelector('.nav-links');
+        const menu = document.querySelector('.menu-btn');
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>

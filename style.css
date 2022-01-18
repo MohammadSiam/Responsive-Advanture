@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.navigation{
+position: absolute;
+display: flex;
+width: 100%;
+justify-content: space-between;
+height: 70px;
+flex-wrap: wrap;
+
+}
+.logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    flex-wrap: wrap;
+}
+.nav-links li{
+    padding: 0 15px;
+}
+.menu-btn{
+    position: absolute;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    display: none;
+}
+/* For mobile Device */
+@media screen and (max-width:768px) {
+    .logo{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    ul li{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .nav-links{        
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        background-size: cover;
+        margin-top: -100vh;
+        transition: all 0.5s ease;
+    }
+    /* Cant understand properly */
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .menu-btn{
+        position: absolute;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+        padding: 6px 14px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+header{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/20/sunset-1807524__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.banner-content{
+    margin-bottom: 30px;
+    line-height: 1.4;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 6vmin;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.banner-content p{
+    font-size: 4vmin;
+    text-align: center;
+}
+.line{
+    width: 150px;
+    height: 3px;
+    background-color: tomato;
+    margin: 4px auto;
+}
+.explore{
+    padding: 8px 20px;;
+    background-color: tomato;
+    border-radius: 30px;    
+    margin: 0 auto;
+    width: fit-content;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
