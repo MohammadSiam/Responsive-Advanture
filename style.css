@@ -4,6 +4,9 @@
     box-sizing: border-box;
 
 }
+body,html{
+    overflow-x: hidden;
+}
 .navigation{
 position: absolute;
 display: flex;
@@ -17,7 +20,8 @@ flex-wrap: wrap;
     color: white;
     display: flex;
     align-items: center;
-    font-size: xx-large;
+    font-size: 5vmin;
+    padding: 6px 14px;
 }
 .nav-links {
     list-style: none;
@@ -37,46 +41,7 @@ flex-wrap: wrap;
     justify-content: end;
     display: none;
 }
-/* For mobile Device */
-@media screen and (max-width:768px) {
-    .logo{
-        position: absolute;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-    ul li{
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-        width: 100%;
-    }
-    .nav-links{        
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
-        background-color: #484872;
-        background-size: cover;
-        margin-top: -100vh;
-        transition: all 0.5s ease;
-    }
-    /* Cant understand properly */
-    .mobile-menu{
-        margin-top: 0px;
-    }
-    .menu-btn{
-        position: absolute;
-        color: white;
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        cursor: pointer;
-        padding: 6px 14px;
-        flex-wrap: wrap;
-    }
-    
-}
+
 
 header{
     background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/20/sunset-1807524__340.jpg");
@@ -120,4 +85,193 @@ header{
 a{
     text-decoration: none;
     color: white;
+}
+.container{
+    width: 90%;
+    margin: 80px auto;
+}
+
+/* Event section */
+.events h1{
+    text-align: center;
+    margin: 25px 0px 15px;
+    font-size: 7vmin;
+    text-transform: uppercase;
+}
+
+.events .row{
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+.events .row img{
+    width: 80%;
+}
+.row{
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+.events .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .row .col h2{
+    margin: 15px auto;
+}
+
+.events .col p{
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    width: 80%;
+}
+
+/* Explores */
+.explores{
+    width: 100%;
+    height: 100vh;
+    background-image: url("http://www.mexicotravelandadventure.com/wp-content/uploads/2014/08/Rare_Landing_Mountain.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.explores-content{
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.explores-content h1{    
+    font-size: 7vmin;
+    width: 100%;
+}
+.explores-content p{
+    font-size: 4vmin;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.explores-line{
+    display: flex;
+    align-items: flex-start;
+}
+/* tours */
+.tours-content{
+    width: 40%;
+
+}
+.tours-content h1{
+    font-size: 7vmin;
+}
+.tours-content .line{
+    margin-left: -1px;
+}
+.tours-content p{
+    padding: 0;
+    margin: 30px auto;
+}
+.image-col{
+    width: 67%;
+}
+.image-gallery{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+}
+.image-gallery img{
+    max-width: 300px;
+    padding: 5px;
+}
+
+
+/* footer */
+.footer{
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    background: black;
+    color: whitesmoke;
+}
+.footer p{
+    padding: 10px;
+    font-size: 3vmin;
+}
+/* For mobile Device */
+@media screen and (max-width:768px) {
+    .logo{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    ul li{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .nav-links{        
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        background-size: cover;
+        margin-top: -100vh;
+        transition: all 0.5s ease;
+    }
+    /* Cant understand properly */
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .menu-btn{
+        position: absolute;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+        padding: 6px 14px;
+        flex-wrap: wrap;
+    }
+
+    /* Event section */
+.events .row{
+    flex-direction: column;
+}
+.events .row .col{
+    margin-bottom: 30px;
+}
+
+/* tours
+ */
+ .tours .row{
+     flex-direction: column;
+     
+ }
+ .tours .row .col{
+     
+ }
+ .tours-content{
+     width: 70%;
+     margin-bottom: 30px;
+ }
+ .image-col{
+     width: 75%;
+ }
+ .image-gallery{
+     flex-direction: column;
+ }
+ .image-gallery img{
+     width: 100%;
+     margin-bottom: 15px;
+ }
+    
 }
