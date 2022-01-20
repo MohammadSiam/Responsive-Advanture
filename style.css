@@ -275,3 +275,10 @@ justify-content: flex-end;
  }
     
 }
+/* Animation */
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
