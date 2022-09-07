@@ -1,28 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-body,html{
+
+body,
+html {
     overflow-x: hidden;
 }
-.navigation{
-position: absolute;
-display: flex;
-width: 100%;
-justify-content: space-between;
-height: 70px;
-flex-wrap: wrap;
+
+.navigation {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 70px;
+    flex-wrap: wrap;
 
 }
-.logo{
+
+.logo {
     color: white;
     display: flex;
     align-items: center;
     font-size: 5vmin;
     padding: 6px 14px;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -30,10 +35,12 @@ flex-wrap: wrap;
     margin: 0 5px;
     flex-wrap: wrap;
 }
-.nav-links li{
+
+.nav-links li {
     padding: 0 15px;
 }
-.menu-btn{
+
+.menu-btn {
     position: absolute;
     color: white;
     width: 100%;
@@ -43,8 +50,8 @@ flex-wrap: wrap;
 }
 
 
-header{
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/20/sunset-1807524__340.jpg");
+header {
+    background-image: url("./Image/Image-1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -55,92 +62,105 @@ header{
     align-items: flex-end;
     justify-content: center;
 }
-.banner-content{
+
+.banner-content {
     margin-bottom: 30px;
     line-height: 1.4;
     text-align: center;
 }
-.banner-content h1{
+
+.banner-content h1 {
     font-size: 6vmin;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.banner-content p{
+
+.banner-content p {
     font-size: 4vmin;
     text-align: center;
 }
-.line{
+
+.line {
     width: 150px;
     height: 3px;
     background-color: tomato;
     margin: 4px auto;
 }
-.explore{
-    padding: 8px 20px;;
+
+.explore {
+    padding: 8px 20px;
+    ;
     background-color: tomato;
-    border-radius: 30px;    
+    border-radius: 30px;
     margin: 0 auto;
     width: fit-content;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-.container{
+
+.container {
     width: 90%;
     margin: 80px auto;
 }
 
 /* Event section */
-.events h1{
+.events h1 {
     text-align: center;
     margin: 25px 0px 15px;
     font-size: 7vmin;
     text-transform: uppercase;
 }
 
-.events .row{
-    display: flex;  
-    align-items: center;  
+.events .row {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 30px;
 }
-.events .row img{
+
+.events .row img {
     width: 80%;
 }
-.row{
-    display: flex;  
-    align-items: center;  
+
+.row {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 30px;
 }
-.events .col{
+
+.events .col {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.events .row .col h2{
+
+.events .row .col h2 {
     margin: 15px auto;
 }
 
-.events .col p{
+.events .col p {
     margin-bottom: 15px;
     padding: 10px 5px;
     width: 80%;
 }
 
 /* Explores */
-.explores{
+.explores {
     width: 100%;
     height: 100vh;
-    background-image: url("http://www.mexicotravelandadventure.com/wp-content/uploads/2014/08/Rare_Landing_Mountain.jpg");
+    background-image: url("./Image/Image-2.jpg");
     background-position: center;
     background-size: cover;
     color: white;
 }
-.explores-content{
+
+.explores-content {
     width: 60vw;
     height: 80vh;
     display: flex;
@@ -149,75 +169,88 @@ a{
     text-align: center;
 }
 
-.explores-content h1{    
+.explores-content h1 {
     font-size: 7vmin;
     width: 100%;
 }
-.explores-content p{
+
+.explores-content p {
     font-size: 4vmin;
     margin-bottom: 30px;
     text-align: left;
 }
-.explores-line{
+
+.explores-line {
     display: flex;
     align-items: flex-start;
 }
+
 /* tours */
-.tours-content{
+.tours-content {
     width: 40%;
 
 }
-.tours-content h1{
+
+.tours-content h1 {
     font-size: 7vmin;
 }
-.tours-content .line{
+
+.tours-content .line {
     margin-left: -1px;
 }
-.tours-content p{
+
+.tours-content p {
     padding: 0;
     margin: 30px auto;
 }
-.image-col{
+
+.image-col {
     width: 67%;
 }
-.image-gallery{
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-end;
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.image-gallery img{
+
+.image-gallery img {
     max-width: 300px;
     padding: 5px;
 }
 
 
 /* footer */
-.footer{
+.footer {
     height: 20vh;
     width: 100%;
     text-align: center;
     background: black;
     color: whitesmoke;
 }
-.footer p{
+
+.footer p {
     padding: 10px;
     font-size: 3vmin;
 }
+
 /* For mobile Device */
-@media screen and (max-width:768px) {
-    .logo{
+@media screen and (max-width:480px) {
+    .logo {
         position: absolute;
         width: 100%;
         display: flex;
         justify-content: flex-start;
     }
-    ul li{
+
+    ul li {
         display: flex;
         justify-content: center;
         margin: 20px 0;
         width: 100%;
     }
-    .nav-links{        
+
+    .nav-links {
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -227,11 +260,13 @@ justify-content: flex-end;
         margin-top: -100vh;
         transition: all 0.5s ease;
     }
+
     /* Cant understand properly */
-    .mobile-menu{
+    .mobile-menu {
         margin-top: 0px;
     }
-    .menu-btn{
+
+    .menu-btn {
         position: absolute;
         color: white;
         width: 100%;
@@ -243,42 +278,67 @@ justify-content: flex-end;
     }
 
     /* Event section */
-.events .row{
-    flex-direction: column;
-}
-.events .row .col{
-    margin-bottom: 30px;
+    .events .row {
+        flex-direction: column;
+    }
+
+    .events .row .col {
+        margin-bottom: 30px;
+    }
+
+    /* tours
+ */
+    .tours .row {
+        flex-direction: column;
+
+    }
+
+    .tours .row .col {}
+
+    .tours-content {
+        width: 70%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .tours-content .line {
+        margin: 0 auto;
+    }
+
+    .image-col {
+        width: 75%;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .explores {
+        text-align: center;
+    }
+
 }
 
-/* tours
- */
- .tours .row{
-     flex-direction: column;
-     
- }
- .tours .row .col{
-     
- }
- .tours-content{
-     width: 70%;
-     margin-bottom: 30px;
- }
- .image-col{
-     width: 75%;
- }
- .image-gallery{
-     flex-direction: column;
- }
- .image-gallery img{
-     width: 100%;
-     margin-bottom: 15px;
- }
-    
+@media screen and (min-width:481px) {
+    .image-gallery img {
+        max-width: 220px;
+        padding: 5px;
+    }
 }
+
+
+
 /* Animation */
-img{
+img {
     transition: transform .3s ease;
 }
-img:hover{
+
+img:hover {
     transform: scale(1.1);
 }
